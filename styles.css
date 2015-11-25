@@ -1,0 +1,166 @@
+/*Version 2*/
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: rgba(235,230,220,0.6) ;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.header-content {
+  height: 100%;
+}
+
+header {
+  height: 25vw;
+  max-height: 210px;
+  width: 100%;
+  text-align: center;
+}
+
+.udacity-logo {
+  max-height: 100%;
+  width:20%;
+  background-color: rgba(238,118,34,0.5);
+  border-radius: 50%;
+ 
+}
+
+h1 {
+  padding-top: 5%;
+  width: 100%;
+  font-weight: normal;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 464px) and (min-width: 381px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 465px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header-content {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .header-content {
+    padding-top: 5px;
+  }
+}
+
+
+/* MAIN SECTIONS */
+
+.hero {
+  padding: 1em;
+  max-width: 100%;
+  background-color: #ee7622;
+  color: white;
+  border-bottom: 2px solid firebrick;
+  margin: 0 auto;
+
+}
+.herocontent {
+  max-width: 800px;
+  margin: 0 auto;
+  /*text-align: center;*/
+}
+.firstIntro {
+  max-width: 35%;
+  display: inline-block;
+  text-align: right;
+  padding-right: 10%;
+  padding-top:5%; 
+  height: 30%;
+  vertical-align: top;
+
+}
+.my-picture {
+  display: inline-block;
+  max-width: 40%;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.iama {
+  max-width: 100%;
+  color: #969696;
+  letter-spacing: 0.05em;
+  font-size: 22px;
+  margin: 0;
+  padding:10px 0;
+  font-size: 1em;
+}
+.firstIntro .iama {
+  color:#e2dbcc;
+}
+.hero::after {
+  background-color: #ee7622;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  bottom:-50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+.hero::before,
+.hero::after {
+  position: absolute;
+  content: '';
+  /*pointer-events: none;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+.my-info {
+  max-width: 100%;
+  font-size: 18px;
+  margin: 0 auto 20px;
+}
+
+.my-info:last-of-type {
+  margin: 0;
+}
+
+.my-name {
+  color: white;
+}
+
+.about-me {
+  padding: 1em;
+}
